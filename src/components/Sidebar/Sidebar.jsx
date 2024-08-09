@@ -10,7 +10,7 @@ const Sidebar = () => {
     return (
         <div className='sidebar'>
             <div className="top">
-                <img onClick={()=> setExtended(previous => !previous)} className='menu' src={assets.menu_icon} alt='menu' />
+                <img onClick={() => setExtended(previous => !previous)} className='menu' src={assets.menu_icon} alt='menu' />
                 <div className="new-chat">
                     <img src={assets.plus_icon} alt='new chat' />
                     {extended ? <p> New Chat </p> : null}
@@ -30,17 +30,17 @@ const Sidebar = () => {
             <div className="bottom">
                 <div className="bottom-item recent-entry">
                     <img src={assets.question_icon} alt='Help' />
-                    {extended?<p> Help </p>:null}
+                    {extended ? <p> Help </p> : null}
                 </div>
 
                 <div className="bottom-item recent-entry">
                     <img src={assets.history_icon} alt='History' />
-                    {extended?<p> Activity </p>:null}
+                    {extended ? <p> Activity </p> : null}
                 </div>
 
                 <div className="bottom-item recent-entry">
                     <img src={assets.setting_icon} alt='Settings' />
-                    {extended?<p> Settings </p>:null}
+                    {extended ? <p> Settings </p> : null}
                 </div>
 
             </div>
