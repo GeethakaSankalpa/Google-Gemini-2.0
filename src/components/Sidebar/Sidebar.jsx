@@ -5,7 +5,7 @@ import { assets } from '../../assets/assets'
 const Sidebar = () => {
 
     // Toggle menu visibility when the menu icon is clicked
-    const [extended, setExtended] = useState(false)
+    const [extended, setExtended] = useState(true)
 
     return (
         <div className='sidebar'>
