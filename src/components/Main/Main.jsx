@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Main.css'
 import { assets } from '../../assets/assets'
+import { Context } from '../../context/Context'
+
 const Main = () => {
+
+    const {onSent, recentPrompt, displayResult, loading,resultData, setInput, input} = useContext(Context);
+
   return (
     <div className='main'>
         <div className="nav">
-            <p> HitMe </p>
+            <p> Gemini - Clone</p>
             <img src={assets.user} alt=''/>
         </div>
 
@@ -47,7 +52,7 @@ const Main = () => {
                     </div>
                 </div>
                 <p className="bottom-info">
-                    HitMe may display inaccurate info, including about people, so double-check its responses. 
+                    Gemini may display inaccurate info, including about people, so double-check its responses. 
                 </p>
             </div>
         </div>
