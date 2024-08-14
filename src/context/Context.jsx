@@ -26,6 +26,9 @@ const ContextProvider = (props) => {
         setLoading(true)
         setDisplayResult(true)
         setRecentPrompt(input)
+        
+        // save user input recent prompt to state variable
+        setPreviousPrompt(prev => [...prev, input])
         const response = await run(input)
         let responseArray = response.split("**");
         let newResponse;
